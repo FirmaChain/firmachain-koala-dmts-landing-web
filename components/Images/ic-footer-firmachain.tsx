@@ -6,7 +6,7 @@ import { FIRMACHAIN_URI } from "../../constants/uri";
 
 const Wrap = styled.div`
     width: 184px;
-    height: 84px;
+    height: 48px;
     position: relative;
     cursor: pointer;
 

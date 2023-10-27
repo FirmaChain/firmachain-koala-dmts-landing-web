@@ -3,6 +3,8 @@ const nextConfig = {
     reactStrictMode: true,
     swcMinify: true,
     trailingSlash: true,
+    distDir: "build",
+    output: "export",
     images: {
         unoptimized: true,
     },

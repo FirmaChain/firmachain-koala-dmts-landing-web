@@ -191,7 +191,7 @@ export const BottomBox = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 0 28px;
+    padding: 25px 0;
 
     @media only screen and (max-width: 1180px) {
         justify-content: center;

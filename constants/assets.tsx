@@ -7,14 +7,14 @@ export const ExternalArrowHoverIcon = "./images/ic_arrow_hover_orange_12px_st3.s
 export const MenuWhIcon = "./images/ic_menu_wh_m.svg";
 export const MenuBkIcon = "./images/ic_menu_bk_m.svg";
 export const MenuCloseIcon = "./images/ic_close_m.svg";
-export const FirmachainWhLogoImage = "./images/ic_logo_firmachain_wh.svg";
-export const FirmachainMobileWhLogoImage = "./images/ic_logo_firmachain_wh_m.svg";
-export const FirmachainBkLogoImage = "./images/ic_logo_firmachain_bk.svg";
-export const FirmachainMobileBkLogoImage = "./images/ic_logo_firmachain_bk_m.svg";
+export const FirmachainWhLogoImage = "./images/ic_logo_firmachain_wh.png";
+export const FirmachainMobileWhLogoImage = "./images/ic_logo_firmachain_wh_m.png";
+export const FirmachainBkLogoImage = "./images/ic_logo_firmachain_bk.png";
+export const FirmachainMobileBkLogoImage = "./images/ic_logo_firmachain_bk_m.png";
 
 // FOOTER
 export const FooterBackgroundImage = "./images/img_bg_footer.png";
-export const FooterFirmachainLogo = "./images/ic_logo_firmachain_bk.svg";
+export const FooterFirmachainLogo = "./images/ic_logo_firmachain_fullname_bk_m.png";
 export const FooterExternalArrowIcon = "./images/btn_arrow_gy_12px_st2_m.svg";
 export const FooterExternalArrowHoverIcon = "./images/btn_arrow_hover_bk_12px_st2.5.svg";
 export const SocialMediaIcon = "./images/ic_media_gy_32px.png";

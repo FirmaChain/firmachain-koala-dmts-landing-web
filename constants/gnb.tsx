@@ -21,7 +21,7 @@ export const MenuExternalItems: IExternalItem[] = [
 export const FooterExternalItems: IExternalItem[][] = [
     [
         { title: "Smart Contract", url: "" },
-        { title: "IBC & De-Fi", url: "" },
+        { title: "IBC & DeFi", url: "" },
         { title: "Enterprise", url: "" },
     ],
     [

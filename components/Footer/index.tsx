@@ -5,8 +5,6 @@ import { FooterContainer } from "../StyledComponent";
 import Contact from "./contact";
 import ExternalButton from "./externalButton";
 import { BackgroundImage, TopBox, Divider, ExternalBox, FooterBox, MobileDivider, BottomBox, BottomWrap, InfoTypo, ExternalContainer, ContactURI } from "./styles";
-import { CONTACT_MAIL } from "../../constants/uri";
-import { LinkMail } from "../Button/linkExternal";
 
 const Footer = forwardRef<HTMLDivElement>((_props, ref) => {
     return (

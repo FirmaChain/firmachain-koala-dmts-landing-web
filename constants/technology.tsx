@@ -14,12 +14,12 @@ export const CarouselItems: ICarouselItem[] = [
         img: TechSmartContractImage,
         imgMobile: TechSmartContractMobileImage,
         desc: [
-            `The 'KOA' (Koala Of Adventure) tokens acquired in Koala Knights can be extended in value through 'KoalaFi'.`,
+            `The 'KOA' (Koala Of Adventure) tokens acquired in Koala Knights can be extended in value through 'Koala-Fi'.`,
             `Moreover, utilizing IBC (Inter Blockchain Communication), you can explore more opportunities beyond the Koala Knights ecosystem.`,
         ],
     },
     {
-        title: "IBC & De-Fi",
+        title: "IBC & DeFi",
         img: TechIBCImage,
         imgMobile: TechIBCMobileImage,
         desc: [
