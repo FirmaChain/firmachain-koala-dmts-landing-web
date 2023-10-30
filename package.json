@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "deploy-testnet": "aws s3 sync ./build s3://deploy-event/testnet/landing-koala --profile=firmachain-deploy --delete",
