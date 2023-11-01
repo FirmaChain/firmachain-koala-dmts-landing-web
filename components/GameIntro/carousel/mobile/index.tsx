@@ -37,7 +37,7 @@ const Mobile = () => {
         $position={'LEFT'}
         // $isEndPoint={currentSlide === 0}
         $isEndPoint={false}
-        onClick={() => (currentSlide === 0 ? null : goToPrevious())}
+        onClick={() => goToPrevious()}
       >
         <IconPixelArrowLeftMobile />
       </MobileArrowButton>
@@ -50,7 +50,7 @@ const Mobile = () => {
         $position={'RIGHT'}
         // $isEndPoint={currentSlide === CarouselItemsMobile.length - 1}
         $isEndPoint={false}
-        onClick={() => (currentSlide === CarouselItemsMobile.length - 1 ? null : goToNext())}
+        onClick={() => goToNext()}
       >
         <IconPixelArrowRightMobile />
       </MobileArrowButton>
@@ -58,7 +58,7 @@ const Mobile = () => {
   }, []);
 
   const settings = {
-    infinite: false,
+    infinite: true,
     speed: 500,
     dots: true,
     centerMode: true,
@@ -83,14 +83,15 @@ const Mobile = () => {
                   <MobileTitleTypo>{value.title}</MobileTitleTypo>
                 </MobileTitleWrap>
                 <MobileSlideImageWrap key={`${value.title}-${index}`}>
-                  <img
-                    src={value.img}
-                    alt={value.title}
+                  <div
                     style={{
+                      backgroundImage: `url('${value.img}')`,
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center',
+                      backgroundRepeat: 'no-repeat',
                       width: '100%',
-                      height: '100%',
-                      minHeight: '184px',
-                      transform: 'scale(1.2)',
+                      minHeight: '220px',
+                      // transform: 'scale(1.2)',
                       objectFit: 'cover',
                     }}
                   />

@@ -19,7 +19,7 @@ export const TitleContainer = styled.div`
   flex-direction: column;
   padding: 110px 0 0;
 
-  @media only screen and (max-width: 1180px) {
+  @media only screen and (max-width: 1380px) {
     padding: 80px 0 0;
   }
 `;
@@ -32,7 +32,7 @@ export const TitleWrap = styled.div`
   gap: 24px;
   padding: 32px 0 66px;
 
-  @media only screen and (max-width: 1180px) {
+  @media only screen and (max-width: 1380px) {
     padding: 20px 0 45px;
   }
 `;
@@ -79,7 +79,7 @@ export const CarouselBox = styled.div`
   justify-content: center;
   flex-direction: column;
   position: relative;
-  padding: 0 20px 30px 20px;
+  padding: 50px;
 
   @media only screen and (max-width: 980px) {
     padding: 0;
@@ -93,8 +93,6 @@ export const BoxBackground = styled.img`
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  object-fit: contain;
 
   @media only screen and (max-width: 980px) {
     display: none;
@@ -104,19 +102,19 @@ export const BoxBackground = styled.img`
 export const ContentBox = styled.div`
   width: 100%;
   height: 100%;
-  padding: 50px 0 50px;
+  // padding: 50px 0 50px;
   transition: all 0.2s linear;
 
-  @media only screen and (max-width: 1180px) {
-    padding: 50px 0 30px;
+  @media only screen and (max-width: 1380px) {
+    // padding: 50px 0 30px;
   }
 
-  @media only screen and (max-width: 1080px) {
-    padding: 40px 0 20px;
+  @media only screen and (max-width: 980px) {
+    padding: 40px 40px 10px 40px;
   }
 
-  @media only screen and (max-width: 850px) {
-    padding: 20px 20px 20px;
+  @media only screen and (max-width: 700px) {
+    padding: 20px 20px 10px 20px;
   }
 `;
 
@@ -130,7 +128,7 @@ export const ContentWrap = styled.div`
   gap: 64px;
 
   @media only screen and (max-width: 980px) {
-    gap: 45px;
+    gap: 30px;
   }
 
   @media only screen and (max-width: 768px) {
@@ -143,7 +141,7 @@ export const SlideBox = styled.div`
   width: 100%;
   max-width: 1200px;
   position: relative;
-  padding: 0 50px;
+  // padding: 0 10px;
 
   @media only screen and (max-width: 980px) {
     padding: 0;
@@ -163,7 +161,7 @@ export const StyledSliderForArticle = styled(StyledSlider)`
 export const SlideImageWrap = styled.div`
   width: 50%;
   max-width: 518px;
-  height: 350px;
+  height: 320px;
   display: flex;
   align-items: flex-start;
   position: relative;
@@ -177,8 +175,8 @@ export const SlideImageWrap = styled.div`
     object-fit: cover;
   }
 
-  @media only screen and (max-width: 1180px) {
-    height: 280px;
+  @media only screen and (max-width: 1380px) {
+    height: 260px;
   }
 
   @media only screen and (max-width: 1080px) {
@@ -203,7 +201,8 @@ export const ContentTypoBox = styled.div`
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
+  padding: 0 10px;
 
   @media only screen and (max-width: 980px) {
     gap: 25px;
@@ -224,7 +223,7 @@ export const ContentTitleTypo = styled.p`
   line-height: 140%;
   transition: all 0.2s linear;
 
-  @media only screen and (max-width: 1180px) {
+  @media only screen and (max-width: 1380px) {
     font-size: 24px;
   }
 
@@ -254,7 +253,7 @@ export const ContentDescTypo = styled.p`
   overflow: hidden;
   transition: all 0.2s linear;
 
-  @media only screen and (max-width: 1180px) {
+  @media only screen and (max-width: 1380px) {
     -webkit-line-clamp: 6;
   }
 
@@ -274,12 +273,16 @@ export const ContentDescTypo = styled.p`
 `;
 
 export const ButtonWrap = styled.div`
-  padding: 0 50px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 12px;
+  margin-top: 30px;
+
+  @media only screen and (max-width: 1180px) {
+    margin-top: 15px;
+  }
 
   @media only screen and (max-width: 980px) {
     padding: 0 20px 20px;
@@ -306,7 +309,7 @@ export const ViewArticleButton = styled.div`
     background: #d9d9d9;
   }
 
-  @media only screen and (max-width: 1180px) {
+  @media only screen and (max-width: 1380px) {
     max-width: 200px;
     padding: 10px 10px;
   }
@@ -319,7 +322,7 @@ export const ViewArticleTypo = styled.p`
   font-style: normal;
   font-weight: 700;
 
-  @media only screen and (max-width: 1180px) {
+  @media only screen and (max-width: 1380px) {
     font-size: 18px;
   }
 
@@ -334,7 +337,7 @@ export const ExternalBox = styled.div`
   left: 0;
   width: 100%;
 
-  @media only screen and (max-width: 1180px) {
+  @media only screen and (max-width: 1380px) {
     bottom: -120px;
   }
   @media only screen and (max-width: 980px) {
@@ -344,12 +347,14 @@ export const ExternalBox = styled.div`
 
 export const ExternalWrap = styled.div`
   position: relative;
-  width: 50%;
+  width: 40%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  margin-left: 20px;
 
-  @media only screen and (max-width: 1180px) {
+  @media only screen and (max-width: 1380px) {
+    margin-left: 0;
     width: 100%;
   }
 `;
@@ -362,7 +367,7 @@ export const CarouselMobileContainer = styled.div`
   padding: 0 20px;
   display: none;
 
-  @media only screen and (max-width: 1180px) {
+  @media only screen and (max-width: 1380px) {
     display: block;
   }
 `;

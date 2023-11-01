@@ -9,7 +9,7 @@ import MenuExternalButton from '../../Button/menuExternalButton';
 import { LinkExternal } from '../../Button/linkExternal';
 import { FIRMACHAIN_URI } from '../../../constants/uri';
 
-const MobileHeaderContainer = styled.div<{ $isOpen: boolean; $color: 'WHITE' | 'BLACK' }>`
+const MobileHeaderContainer = styled.div<{ $isOpen: boolean; $color: 'NONE' | 'WHITE' | 'BLACK' }>`
   width: 100%;
   height: 58px;
   position: fixed;
@@ -23,6 +23,7 @@ const MobileHeaderContainer = styled.div<{ $isOpen: boolean; $color: 'WHITE' | '
   webkit-backdrop-filter: blur(2px);
   z-index: 9999;
 
+  ${(props) => props.$color === 'NONE' && 'background-color: none;'};
   ${(props) => props.$color === 'WHITE' && 'background-color: #14141450'};
   ${(props) => props.$color === 'BLACK' && 'background-color: #FFFFFF20'};
   ${(props) => props.$isOpen && 'background-color: #101721'};
@@ -44,7 +45,7 @@ const HeaderBox = styled.div`
 
 const MenuBox = styled.div<{ $isOpen: boolean }>`
   height: ${(props) => (props.$isOpen ? 'calc(var(--vh, 1vh) * 100 - 58px)' : 0)};
-  padding: ${(props) => (props.$isOpen ? '50px 20px' : '0 40px')};
+  padding: ${(props) => (props.$isOpen ? '10px 20px' : '0 40px')};
   width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -65,7 +66,10 @@ const ExportBox = styled.div`
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  gap: 28px;
+
+  & > div:nth-child(odd) {
+    padding: 28px 0;
+  }
 `;
 
 const Divider = styled.div`
@@ -76,7 +80,7 @@ const Divider = styled.div`
 `;
 
 interface IProps {
-  headerColor: 'WHITE' | 'BLACK';
+  headerColor: 'NONE' | 'WHITE' | 'BLACK';
 }
 
 const Mobile = ({ headerColor }: IProps) => {

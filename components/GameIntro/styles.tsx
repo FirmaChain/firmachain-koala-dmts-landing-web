@@ -32,6 +32,8 @@ export const TitleContainer = styled.div`
 
   @media only screen and (max-width: 1180px) {
     padding: 95px 0 0;
+    gap: 27px;
+    margin-bottom: 6px;
   }
 `;
 
@@ -212,11 +214,13 @@ export const TwistedImage = styled.div<{ $isCurrent: boolean }>`
             width: 734px;
             height: 400px;
             margin-top: -10px;
+            & > div {transform: skew(8deg) scale(1.07);}
     `
       : `
             width: 354px;
             height: 400px;
             margin-top: 0;
+            & > div {transform: skew(8deg) scale(1.2);}
 
             > div: nth-child(1) {
             }
@@ -226,7 +230,7 @@ export const TwistedImage = styled.div<{ $isCurrent: boolean }>`
 export const Image = styled.div`
   width: 100%;
   height: 100%;
-  transform: skew(8deg) scale(1.2);
+  transform: skew(8deg) scale(1.07);
   border-radius: 24px;
   transition-duration: 0.4s;
   transition-delay: 0.1s;
@@ -266,7 +270,7 @@ export const MobileCarouselBox = styled.div`
 `;
 
 export const MobileSlideBox = styled.div`
-  padding: 0 20px;
+  padding: 0 12px;
 `;
 
 export const MobileTitleWrap = styled.div`
@@ -315,8 +319,22 @@ export const MobileSlideImageWrap = styled.div`
   border-radius: 24px;
   overflow: hidden;
 
-  > img {
-    width: 100%;
+  @media only screen and (max-width: 1180px) {
+    & > div {
+      min-height: 350px !important;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    & > div {
+      min-height: 300px !important;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    & > div {
+      min-height: 250px !important;
+    }
   }
 `;
 
@@ -327,7 +345,7 @@ export const MobileArrowButton = styled.div<{ $position: 'LEFT' | 'RIGHT'; $isEn
   transform: translate(0, -50%);
   transition: all 0.5s ease-in-out;
   z-index: 2;
-  ${(props) => props.$position === 'LEFT' && `left: 10px`};
-  ${(props) => props.$position === 'RIGHT' && `right: 10px`};
+  ${(props) => props.$position === 'LEFT' && `left: 2px`};
+  ${(props) => props.$position === 'RIGHT' && `right: 3px`};
   ${(props) => props.$isEndPoint && `opacity: 0; cursor: default`};
 `;

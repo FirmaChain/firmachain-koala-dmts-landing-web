@@ -79,8 +79,8 @@ const IconWrap = styled.div`
   height: 36px;
 
   @media only screen and (max-width: 768px) {
-    width: 36px;
-    height: 36px;
+    width: 28px;
+    height: 28px;
   }
 `;
 
@@ -90,11 +90,10 @@ const Icon = styled.div`
   height: 36px;
   position: absolute;
   transition: all 0.2s ease-in-out;
-  image-rendering: pixelated;
 
   @media only screen and (max-width: 768px) {
-    width: 36px;
-    height: 36px;
+    width: 28px;
+    height: 28px;
   }
 `;
 

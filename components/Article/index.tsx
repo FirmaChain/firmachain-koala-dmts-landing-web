@@ -24,9 +24,6 @@ interface IProps {
 }
 
 const Article = forwardRef<HTMLDivElement, IProps>(({ articles }, ref) => {
-  // TODO
-  // Article 정보를 medium이 아닌 api를 통해 불러올것.
-
   // const [articles, setArticles] = useState<IArticle[]>([]);
 
   // useEffect(() => {

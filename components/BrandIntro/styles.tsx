@@ -78,9 +78,12 @@ export const CenterLogoImage = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, 50%);
+  margin-top: -15px;
 
   @media only screen and (max-width: 768px) {
     transform: translate(-50%, calc(50% - 20px));
-    margin-top: -7px;
+    margin-top: -5px;
+    min-width: 80px;
+    min-height: 90px;
   }
 `;

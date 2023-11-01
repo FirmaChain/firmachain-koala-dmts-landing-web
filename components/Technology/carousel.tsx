@@ -59,8 +59,8 @@ const Carousel = () => {
     dots: isMobile ? true : false,
     slidesToShow: 1,
     slidesToScroll: 1,
-    afterChange: (index: number) => {
-      setSelectTab(index);
+    beforeChange: (oldIndex: number, newIndex: number) => {
+      setSelectTab(newIndex);
     },
     prevArrow: <ImageSliderPrev enabled={selectTab > 0} onClick={goToPrevious} />,
     nextArrow: <ImageSliderNext enabled={selectTab < CarouselItems.length - 1} onClick={goToNext} />,

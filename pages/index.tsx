@@ -34,9 +34,11 @@ const Home: NextPage<IProps> = ({ articles }) => {
   const bannerRef = useRef<HTMLDivElement | null>(null);
   const footerRef = useRef<HTMLDivElement | null>(null);
 
-  const [headerLogoColor, setHeaderLogoColor] = useState<'WHITE' | 'BLACK'>('WHITE');
+  const [headerLogoColor, setHeaderLogoColor] = useState<'NONE' | 'WHITE' | 'BLACK'>('NONE');
 
   const handleScroll = () => {
+    if (mainVisualRef.current !== null && mainVisualRef.current.getBoundingClientRect().top == 0)
+      return setHeaderLogoColor('NONE');
     if (footerRef.current !== null && footerRef.current.getBoundingClientRect().top <= 50)
       return setHeaderLogoColor('BLACK');
     if (bannerRef.current !== null && bannerRef.current.getBoundingClientRect().top <= 50)

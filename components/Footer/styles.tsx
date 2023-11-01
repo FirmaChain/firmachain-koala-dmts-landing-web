@@ -60,7 +60,7 @@ export const TopBox = styled.div`
 
   @media only screen and (max-width: 1180px) {
     flex-direction: column;
-    padding: 55px 0px 0;
+    padding: 40px 0px 0;
   }
 `;
 
@@ -71,18 +71,29 @@ export const ExternalContainer = styled.div`
   justify-content: space-between;
 
   @media only screen and (max-width: 1180px) {
-    justify-content: space-between;
-    padding: 0 0 56px;
+    justify-content: center;
+    gap: 29px;
+    padding: 0 0 40px;
   }
 `;
 
 export const ExternalBox = styled.div`
   height: auto;
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  flex-direction: column;
   gap: 28px;
+
+  @media only screen and (max-width: 980px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 18px;
+
+    & > div > div {
+      gap: 8px;
+    }
+  }
 `;
 
 export const ExternalWrap = styled.div`
@@ -114,7 +125,7 @@ export const ExternalTypo = styled.p`
   line-height: 120%;
 
   @media only screen and (max-width: 1180px) {
-    font-size: 15px;
+    font-size: 14px;
   }
 `;
 
