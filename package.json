@@ -7,10 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy-testnet": "aws s3 sync ./build s3://deploy-event/testnet/landing-koala --profile=firmachain-deploy --delete",
-    "invalidate-testnet": "aws cloudfront create-invalidation --profile=firmachain-deploy --distribution-id E1VLJV6YJMYLH --paths '/*'",
-    "deploy-mainnet": "aws s3 sync ./build s3://deploy-event/mainnet/landing-koala --profile=firmachain-deploy --delete",
-    "invalidate-mainnet": "aws cloudfront create-invalidation --profile=firmachain-deploy --distribution-id E2LYRPEUHDCPEA --paths '/*'"
+    "deploy-mainnet": "aws s3 sync ./build s3://deploy-event/mainnet/dmts-landing-koala --profile=firmachain-deploy --delete",
+    "invalidate-mainnet": "aws cloudfront create-invalidation --profile=firmachain-deploy --distribution-id E2E5QAKQMRTGH1 --paths '/*'"
   },
   "dependencies": {
     "@types/node": "20.8.6",
