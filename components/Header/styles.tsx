@@ -37,7 +37,6 @@ export const DungeonButtonWrap = styled.div<{ $isMenu: boolean }>`
   pointer-events: auto;
 
   &:hover {
-    border: 1px solid #ff4800;
     > div:nth-child(1) {
       opacity: 1;
     }

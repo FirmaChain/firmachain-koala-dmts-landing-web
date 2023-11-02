@@ -29,6 +29,7 @@ export const SocialTelegramHoverIcon = './images/ic_telegram_hover_bk_32px.png';
 // MAIN VISUAL
 export const MainVisualVideo = './video/main_koala_knight_video.mp4';
 export const MainTitleImage = './images/ic_logo_koala-knights_large.png';
+export const MainTitleImage2 = './images/img_dmts_logo.png';
 export const MainTitleMobileImage = './images/ic_logo_koala-knights_large_m.png';
 export const MainKoalaKnightsIcon = './images/ic_koalaknights_gy_56px.svg';
 export const MainArrowIcon = './images/ic_arrow_gy_56px.svg';

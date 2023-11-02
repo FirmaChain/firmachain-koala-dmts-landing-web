@@ -102,6 +102,7 @@ export const BoxBackground = styled.img`
 export const ContentBox = styled.div`
   width: 100%;
   height: 100%;
+  cursor: pointer;
   // padding: 50px 0 50px;
   transition: all 0.2s linear;
 

@@ -71,7 +71,7 @@ const Carousel = ({ articles }: IProps) => {
           <StyledSliderForArticle ref={sliderRef} {...settings}>
             {articles.map((value) => {
               return (
-                <ContentBox key={`${value.title}`}>
+                <ContentBox key={`${value.title}`} onClick={() => LinkExternal(value.link)}>
                   <ContentWrap>
                     <SlideImageWrap>
                       <img src={value.img} alt={`${value.title}`} />
