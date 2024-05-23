@@ -5,7 +5,7 @@
 <br>
 
 ## Features
-Koala Hub allows trading of in-game items and provides the latest information.
+Earn rewards through gameplay with FIRMACHAIN's first P2E project at DMTS 2023.
 
 <br>
 
