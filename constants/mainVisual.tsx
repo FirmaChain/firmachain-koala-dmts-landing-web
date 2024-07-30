@@ -4,7 +4,7 @@ interface IExternalItem {
 }
 
 export const MainVisualTitleBold = 'First Step to P2E';
-export const MainVisualTitleNormal = 'with FIRMACHAIN';
+export const MainVisualTitleNormal = 'FIRMACHAIN';
 export const MainVisualSub = 'with';
 
 export const ExternalItems: IExternalItem[] = [
